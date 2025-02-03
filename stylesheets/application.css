@@ -1644,3 +1644,9 @@ a.icon-list_calendar.material-icons:hover {
   text-decoration: none;
 }
 /*---- calendar tooltip ----*/
+
+/*---- Attachment field ----*/
+.attachments_fields .filename {
+  padding-left: 20px;
+}
+/*---- Attachment field ----*/
