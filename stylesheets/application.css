@@ -325,7 +325,7 @@ body.controller-issues.action-show div#content {
   color: #420707;
   outline: 2px dashed #fff;
   outline-offset: -5px;
-  padding: 10px 6px 0px 12px;
+  padding: 10px 6px 10px 12px;
 }
 
 #top-menu a {
