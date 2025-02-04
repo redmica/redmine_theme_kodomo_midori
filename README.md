@@ -57,10 +57,17 @@ NOTE: Following samples are using 'Patrick Hand', 'Anzu' (as Japanese font).
 
 <img src='images/screenshot-messages.png' width='400'>
 
+## Supported Redmine versions
+
+6.0 or later
+
+NOTE: If you want to use this theme with Redmine 5.1 or earlier, please use 1.0.1 or earlier versions.
+
 ## Installation
 
 - Download zip file from release page
-- Extract zip file, and move to public/themes/redmine_theme_kodomo_midori at Redmine directory
+- Extract zip file, and move to themes/redmine_theme_kodomo_midori at Redmine directory
+- Restart Redmine
 - Open Redmine page, and go to Administration > Settings > Display
 - Enable the redmine_theme_kodomo_midori from Theme, and save settings
 
@@ -229,17 +236,15 @@ font
 
 #### テーマのみの配置
 
-- Redmineのディレクトリ/public/themes/ 以下に展開します
+- Redmineのディレクトリ/themes/ 以下に展開します
 - 配置後にRedmineを再起動します
 
-参考: Redmineのディレクトリ/public/themes/ 以下
+参考: Redmineのディレクトリ/themes/ 以下
 
 ```bash
 $ tree -L 1
 .
 ├── README
-├── alternate
-├── classic
 └── redmine_theme_kodomo_midori
 
 3 directories, 1 file
