@@ -88,6 +88,10 @@
     font-size: 16px;
   }
 
+  .flyout-menu #admin-menu a svg {
+    stroke: #643503;
+  }
+
   .flyout-menu ul li a:hover {
     background-color: rgb(255, 255, 185);
     color: #4caf50;

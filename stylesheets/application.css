@@ -518,6 +518,10 @@ div#admin-index>#admin-menu li {
   position: relative;
 }
 
+div#admin-index>#admin-menu a {
+  padding-left: 20px;
+}
+
 div#admin-index>#admin-menu a.selected {
   background-color: transparent;
   color: #820505;
@@ -525,6 +529,10 @@ div#admin-index>#admin-menu a.selected {
 
 div#admin-index>#admin-menu li a[class*="icon-"] {
   background-image: none;
+}
+
+div#admin-index>#admin-menu li svg {
+  display: none;
 }
 
 div#admin-index>#admin-menu li a.icon::before {
