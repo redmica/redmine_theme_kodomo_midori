@@ -1073,6 +1073,11 @@ a[class*="icon-"]:hover {
   background-position-x: 4px;
 }
 
+#content .contextual .drdn-items a {
+  display: block;
+  width: 100%;
+}
+
 /*----- context menu ------*/
 .issue.context-menu-selection {
   background-color: #2e7480 !important;
