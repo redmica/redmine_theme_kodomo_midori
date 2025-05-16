@@ -1201,6 +1201,7 @@ form#issue-form fieldset {
   overflow: hidden;
   right: 0px;
   bottom: 0px;
+  pointer-events: none;
 }
 
 .ribbon {
