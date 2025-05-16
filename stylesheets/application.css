@@ -1298,6 +1298,11 @@ div.journal h4 img.gravatar {
   margin-left: -24px;
 }
 
+div.journal .note-header {
+  min-height: 26px;
+  box-sizing: content-box;
+}
+
 div#activity dl {
   border-left: 2px dotted rgb(184, 207, 206);
   padding-left: 9px;
