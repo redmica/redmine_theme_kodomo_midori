@@ -527,6 +527,17 @@ div#admin-index>#admin-menu a.selected {
   color: #820505;
 }
 
+#sidebar #admin-menu li {
+  padding: 0 1em 0 2.3em;
+}
+#sidebar #admin-menu a {
+  display: block;
+  width: 100%;
+}
+#sidebar #admin-menu a.selected svg.icon-svg {
+  stroke: #820505 !important;
+}
+
 div#admin-index>#admin-menu li a[class*="icon-"] {
   background-image: none;
 }
@@ -1059,6 +1070,10 @@ a[class*="icon-"]:hover {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   background-position-x: 4px;
+}
+
+#content .contextual .drdn-items a {
+  display: block;
 }
 
 /*----- context menu ------*/
