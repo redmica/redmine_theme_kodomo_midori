@@ -448,10 +448,6 @@ div.box p > label::before {
   font-size: 18px;
 }
 
-#content .tabs ul li:hover {
-  background-color: #ffffe2;
-}
-
 #content .tabs ul li a {
   border: 1px solid #ccc;
   border-bottom: 1px solid #bbbbbb;
