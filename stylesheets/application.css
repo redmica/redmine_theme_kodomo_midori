@@ -448,10 +448,6 @@ div.box p > label::before {
   font-size: 18px;
 }
 
-#content .tabs ul li:hover {
-  background-color: #ffffe2;
-}
-
 #content .tabs ul li a {
   border: 1px solid #ccc;
   border-bottom: 1px solid #bbbbbb;
@@ -1678,3 +1674,15 @@ a.icon-list_calendar.material-icons:hover {
   padding-left: 20px;
 }
 /*---- Attachment field ----*/
+
+/*---- Button to copy pre content ---*/
+div.wiki .copy-pre-content-link {
+  line-height: normal;
+  font-size: 0.875rem;
+  margin-right: 4px;
+}
+div#message_topic_wiki .copy-pre-content-link {
+  margin-right: 6px;
+}
+
+/*---- Button to copy pre content ---*/
