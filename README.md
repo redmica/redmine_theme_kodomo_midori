@@ -61,8 +61,6 @@ NOTE: Following samples are using 'Patrick Hand', 'Anzu' (as Japanese font).
 
 6.0 or later
 
-NOTE: If you want to use this theme with Redmine 5.1 or earlier, please use 1.0.1 or earlier versions.
-
 ## Installation
 
 - Download zip file from release page
@@ -70,6 +68,14 @@ NOTE: If you want to use this theme with Redmine 5.1 or earlier, please use 1.0.
 - Restart Redmine
 - Open Redmine page, and go to Administration > Settings > Display
 - Enable the redmine_theme_kodomo_midori from Theme, and save settings
+
+### For Redmine 6.0
+
+Use the redmine6.0 tag for compatibility with Redmine 6.0.
+
+```
+git clone -b redmine6.0 https://github.com/redmica/redmine_theme_kodomo_midori.git themes/redmine_theme_kodomo_midori
+```
 
 ## Evaluate with docker image on DockerHub
 
