@@ -344,7 +344,7 @@ body.controller-issues.action-show div#content {
   color: #066b59;
 }
 
-#loggedas a.user {
+#top-menu #loggedas a {
   color: #caff95;
 }
 
@@ -1642,3 +1642,49 @@ div#message_topic_wiki .copy-pre-content-link {
 }
 
 /*---- Button to copy pre content ---*/
+
+/* Added to maintain the original layout after header redesign in Redmine core (#43937) */
+
+#main-menu {
+  background: transparent;
+  padding: 0;
+  margin-left: 15px;
+}
+
+#main-menu li a.new-object {
+  padding-block: 5px;
+  padding-inline: 24px 11px;
+  border: none;
+}
+
+#main-menu ul.menu-children li a {
+  padding-block: 4px;
+  padding-inline: 24px 10px;
+}
+
+#main-menu li a.selected, #main-menu li a.selected:hover {
+  box-shadow: none;
+}
+
+#main-menu .tabs-buttons {
+  inset-inline-end: -3px;
+  inset-block-start: auto;
+  inset-block-end: 0;
+  transform: none;
+}
+
+#top-menu {
+  font-size: 0.8em;
+}
+
+#top-menu li {
+  margin-inline-end: 0px;
+}
+
+body #header {
+  padding-block-end: 20px;
+}
+
+#header h1 {
+  display: block;
+}
