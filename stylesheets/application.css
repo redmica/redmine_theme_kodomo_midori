@@ -310,10 +310,15 @@ body.controller-issues.action-show div#content {
   border-right: none;
 }
 
+body #header {
+  padding-block-end: 20px;
+}
+
 #header h1 {
   text-align: 60px;
   line-height: 80px;
   font-size: 28pt;
+  display: block;
 }
 
 #header a {
@@ -326,6 +331,11 @@ body.controller-issues.action-show div#content {
   outline: 2px dashed #fff;
   outline-offset: -5px;
   padding: 10px 6px 10px 12px;
+  font-size: 0.8em;
+}
+
+#top-menu li {
+  margin-inline-end: 0px;
 }
 
 #top-menu a {
@@ -604,6 +614,12 @@ div#admin-index>#admin-menu li:hover {
   -o-transform: rotate(20deg);
 }
 
+#main-menu {
+  background: transparent;
+  padding: 0;
+  margin-left: 15px;
+}
+
 #main-menu li {
   margin: 0px 4px 0px 0px;
 }
@@ -648,11 +664,13 @@ div#admin-index>#admin-menu li:hover {
 #main-menu li a.selected:hover {
   background: rgb(246, 252, 205);
   color: rgb(58, 49, 2);
+  box-shadow: none;
 }
 
 #main-menu li a.selected {
   background-color: rgb(86, 199, 165);
   color: #ffffff;
+  box-shadow: none;
 }
 
 #main-menu li a.selected::before {
@@ -661,6 +679,9 @@ div#admin-index>#admin-menu li:hover {
 
 #main-menu li a.new-object {
   background-color: rgb(246, 255, 206);
+  padding-block: 5px;
+  padding-inline: 24px 11px;
+  border: none;
 }
 
 #main-menu .menu-children li a:hover {
@@ -668,10 +689,22 @@ div#admin-index>#admin-menu li:hover {
   background-color: rgb(246, 255, 206);
 }
 
+#main-menu ul.menu-children li a {
+  padding-block: 4px;
+  padding-inline: 24px 10px;
+}
+
 #main-menu .menu-children {
   border-right: 1px solid #c6ad35;
   border-bottom: 1px solid #c6ad35;
   border-left: 1px solid #c6ad35;
+}
+
+#main-menu .tabs-buttons {
+  inset-inline-end: -3px;
+  inset-block-start: auto;
+  inset-block-end: 0;
+  transform: none;
 }
 
 table.list {
@@ -1642,49 +1675,3 @@ div#message_topic_wiki .copy-pre-content-link {
 }
 
 /*---- Button to copy pre content ---*/
-
-/* Added to maintain the original layout after header redesign in Redmine core (#43937) */
-
-#main-menu {
-  background: transparent;
-  padding: 0;
-  margin-left: 15px;
-}
-
-#main-menu li a.new-object {
-  padding-block: 5px;
-  padding-inline: 24px 11px;
-  border: none;
-}
-
-#main-menu ul.menu-children li a {
-  padding-block: 4px;
-  padding-inline: 24px 10px;
-}
-
-#main-menu li a.selected, #main-menu li a.selected:hover {
-  box-shadow: none;
-}
-
-#main-menu .tabs-buttons {
-  inset-inline-end: -3px;
-  inset-block-start: auto;
-  inset-block-end: 0;
-  transform: none;
-}
-
-#top-menu {
-  font-size: 0.8em;
-}
-
-#top-menu li {
-  margin-inline-end: 0px;
-}
-
-body #header {
-  padding-block-end: 20px;
-}
-
-#header h1 {
-  display: block;
-}
