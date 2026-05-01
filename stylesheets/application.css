@@ -410,6 +410,10 @@ body #header {
   background: rgba(247, 206, 155, 0.3);
 }
 
+#sidebar a.selected,
+#sidebar a.selected:hover { background-color: #1864ab99; color: #fff; box-shadow: none; border-radius: 3px; }
+#sidebar a.selected svg.icon-svg { stroke: #fff !important; }
+
 .box {
   background-color: #fbfedb;
   color: #4c0a0a;
