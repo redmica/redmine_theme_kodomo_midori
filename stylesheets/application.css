@@ -344,6 +344,10 @@ body #header {
   font-weight: bold;
 }
 
+#top-menu .dropdown-content a {
+  color: rgb(6, 82, 45);
+}
+
 #top-menu a:hover {
   color: #066b59;
 }
