@@ -1115,6 +1115,12 @@ a[class*="icon-"]:hover {
   display: block;
 }
 
+#content .contextual .dropdown-items a {
+  display: flex;
+  padding-inline-start: 36px;
+  white-space: nowrap;
+}
+
 /*----- context menu ------*/
 .issue.context-menu-selection {
   background-color: #2e7480 !important;
