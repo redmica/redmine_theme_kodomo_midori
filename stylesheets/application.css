@@ -1131,6 +1131,10 @@ a[class*="icon-"]:hover {
   background-color: #379e4d !important;
   color: #f8f8f8 !important;
 }
+
+#context-menu.dropdown-content > ul > li > a {
+  white-space: nowrap;
+}
 /*----- context menu ------*/
 
 /*----- form --------*/
