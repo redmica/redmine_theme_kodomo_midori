@@ -878,6 +878,12 @@ div.issue .subject h3 {
   border-bottom: 2px solid #ffdb88;
 }
 
+/*--- documents ---*/
+#document-list .document-item .updated_on,
+#document-list .document-item .wiki.description {
+  font-size: inherit;
+}
+
 /*--- news ---*/
 article.news-article {
   padding-left: 20px;
