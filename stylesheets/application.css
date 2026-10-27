@@ -1432,6 +1432,11 @@ div#activity h3::after {
   border-radius: 100%;
 }
 
+div#activity h3 .day-of-week,
+div#activity h3 .non-working-date-name {
+  color: inherit;
+}
+
 div#activity>dl>dt:hover {
   color: darkorange;
   text-decoration: darkorange;
