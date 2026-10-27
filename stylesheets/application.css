@@ -900,6 +900,15 @@ article.news-article div.wiki {
   width: 90%;
 }
 
+#news-list article.news-article header p.author {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#news-list article.news-article .wiki > p:first-child {
+  margin-top: 1em;
+}
+
 article.news-article div.wiki::before {
   position: absolute;
   top: 0.3em;
