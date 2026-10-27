@@ -1,5 +1,5 @@
 /*--- Style for Wiki slide mode ---*/
-section {
+div.wiki.fullPageScroll > section {
   width: 90%;
   height: 100vh;
   position: relative;

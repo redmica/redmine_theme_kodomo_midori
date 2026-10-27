@@ -344,6 +344,10 @@ body #header {
   font-weight: bold;
 }
 
+#top-menu .dropdown-content a {
+  color: rgb(6, 82, 45);
+}
+
 #top-menu a:hover {
   color: #066b59;
 }
@@ -1111,6 +1115,12 @@ a[class*="icon-"]:hover {
   display: block;
 }
 
+#content .contextual .dropdown-items a {
+  display: flex;
+  padding-inline-start: 36px;
+  white-space: nowrap;
+}
+
 /*----- context menu ------*/
 .issue.context-menu-selection {
   background-color: #2e7480 !important;
@@ -1120,6 +1130,10 @@ a[class*="icon-"]:hover {
 .issue.context-menu-selection:hover {
   background-color: #379e4d !important;
   color: #f8f8f8 !important;
+}
+
+#context-menu.dropdown-content > ul > li > a {
+  white-space: nowrap;
 }
 /*----- context menu ------*/
 
