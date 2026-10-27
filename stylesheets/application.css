@@ -236,12 +236,8 @@ div + .drdn-items {
 }
 /*--------- Project Jump form -----------*/
 
-.gantt_subjects_container>.gantt_hdr:first-child {
-  background: #f3f7d9 !important;
-  height: 36px !important;
-}
-
-#gantt_area>.gantt_hdr:first-child {
+.gantt-pane>header,
+.gantt-timeline-canvas>header {
   background: #f3f7d9 !important;
 }
 
