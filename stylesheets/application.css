@@ -236,12 +236,8 @@ div + .drdn-items {
 }
 /*--------- Project Jump form -----------*/
 
-.gantt_subjects_container>.gantt_hdr:first-child {
-  background: #f3f7d9 !important;
-  height: 36px !important;
-}
-
-#gantt_area>.gantt_hdr:first-child {
+.gantt-pane>header,
+.gantt-timeline-canvas>header {
   background: #f3f7d9 !important;
 }
 
@@ -882,6 +878,12 @@ div.issue .subject h3 {
   border-bottom: 2px solid #ffdb88;
 }
 
+/*--- documents ---*/
+#document-list .document-item .updated_on,
+#document-list .document-item .wiki.description {
+  font-size: inherit;
+}
+
 /*--- news ---*/
 article.news-article {
   padding-left: 20px;
@@ -896,6 +898,15 @@ article.news-article div.wiki {
   padding: 0.2em 1em;
   color: #454545;
   width: 90%;
+}
+
+#news-list article.news-article header p.author {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#news-list article.news-article .wiki > p:first-child {
+  margin-top: 1em;
 }
 
 article.news-article div.wiki::before {
@@ -1428,6 +1439,11 @@ div#activity h3::after {
   height: 13px;
   background-color: white;
   border-radius: 100%;
+}
+
+div#activity h3 .day-of-week,
+div#activity h3 .non-working-date-name {
+  color: inherit;
 }
 
 div#activity>dl>dt:hover {
