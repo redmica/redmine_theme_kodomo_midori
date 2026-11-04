@@ -217,7 +217,9 @@ a:visited {
   border: none;
 }
 
-.drdn-content {
+.drdn-content,
+.contextual .dropdown-content,
+.journal-actions .dropdown-content {
   border: 6px solid #cfdfdc8f;
   border-radius: 6px;
 }
