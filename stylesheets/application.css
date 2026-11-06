@@ -217,7 +217,9 @@ a:visited {
   border: none;
 }
 
-.drdn-content {
+.drdn-content,
+.contextual .dropdown-content,
+.journal-actions .dropdown-content {
   border: 6px solid #cfdfdc8f;
   border-radius: 6px;
 }
@@ -326,8 +328,17 @@ body #header {
   color: #420707;
   outline: 2px dashed #fff;
   outline-offset: -5px;
-  padding: 10px 6px 10px 12px;
+  padding: 7px 6px 7px 12px;
   font-size: 0.8em;
+}
+
+#top-menu img.gravatar {
+  padding: 0;
+  margin: 0;
+}
+
+#top-menu span[role="img"].avatar {
+  border: 0;
 }
 
 #top-menu li {
