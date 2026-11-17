@@ -160,70 +160,6 @@ const setLoadingHtml = () => {
   }
 }
 
-const projectMembersList = () => {
-  if (document.body.classList.contains('controller-projects') && document.body.classList.contains('action-show')) {
-    const trigger = document.querySelector('div.members.box > h3.icon.icon-group')
-    if (trigger) {
-      trigger.addEventListener('click', displayStaffRoll, false)
-    }
-  }
-}
-
-async function displayStaffRoll () {
-  let wrapper = document.createElement('div')
-  wrapper.setAttribute('class', 'staff_roll_wrapper')
-
-  let main = document.createElement('div')
-  main.setAttribute('class', 'staff_roll_main')
-
-  let panel = document.createElement('div')
-  panel.setAttribute('class', 'staff_roll')
-
-  let projectName = document.querySelector('span.current-project').textContent
-  let project = document.createElement('div')
-  project.setAttribute('class', 'project')
-  project.innerHTML = projectName
-  panel.appendChild(project)
-
-  let members = document.querySelectorAll('div.members p')
-  let membersByroll = Array.from(members).map(member => member.innerText)
-  for (let i = 0; i < membersByroll.length; i++) {
-    let [rollName, users] = membersByroll[i].split(': ')
-    let userList = users.split(',')
-
-    for (let m = 0; m < userList.length; m++) {
-      let rollEntry = document.createElement('div')
-      rollEntry.setAttribute('class', 'roll_name')
-      rollEntry.innerHTML = rollName
-
-      let content = document.createElement('div')
-      content.setAttribute('class', 'name')
-      content.innerHTML = userList[m]
-
-      panel.appendChild(rollEntry)
-      panel.appendChild(content)
-    }
-  }
-
-  let info = document.createElement('div')
-  info.setAttribute('class', 'staff_roll_info')
-  info.innerText = 'Enjoy our project!'
-
-  main.appendChild(panel)
-  wrapper.appendChild(main)
-  wrapper.appendChild(info)
-  document.getElementById('wrapper').setAttribute('style', 'opacity: 0.4;')
-  document.body.appendChild(wrapper)
-
-  wrapper.addEventListener('click', function () {
-    wrapper.parentNode.removeChild(wrapper)
-    document.getElementById('wrapper').setAttribute('style', 'opacity: 1;')
-  })
-
-  await sleep(60000)
-  wrapper.click()
-}
-
 // for Wiki Presentation mode
 const switchWikiPresentationMode = () => {
   let wiki = document.querySelector('div.wiki.wiki-page')
@@ -365,6 +301,5 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', setCloseRibbon)
   document.addEventListener('DOMContentLoaded', setLoading)
   document.addEventListener('DOMContentLoaded', setIssueStyle)
-  document.addEventListener('DOMContentLoaded', projectMembersList)
   document.addEventListener('DOMContentLoaded', wikiPresentation)
 }
